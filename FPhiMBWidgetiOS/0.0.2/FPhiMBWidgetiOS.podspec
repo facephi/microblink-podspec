@@ -26,8 +26,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/facephi/microblink-framework.git", :tag => "#{spec.version}" }
   spec.platform     = :ios
 
-  # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
-
   spec.ios.deployment_target = "8.0.0"
   spec.ios.resources = "Microblink.bundle"
   spec.ios.requires_arc = false
