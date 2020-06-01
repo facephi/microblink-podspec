@@ -8,24 +8,17 @@
 
 Pod::Spec.new do |spec|
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
   spec.name         = "FPhiMBWidgetiOS"
   spec.version      = "0.0.2"
-  spec.summary      = "A short description of FPhiMBWidgetiOS."
+  spec.summary      = "Support library for Selphid."
 
   spec.description  = <<-DESC
-  An extended description of MyFramework project.
+  Support libraries for SelphID iOS widget.
   DESC
-  spec.homepage     = "http://your.homepage/here"
-  spec.license = { :type => 'Copyright', :text => <<-LICENSE
-                 Copyright 2020
-                 Permission is granted to...
+  spec.homepage     = "https://www.facephi.com"
+  spec.license = { :type => "Commercial", 
+                   :text => <<-LICENSE
+                   © Facephi 2020. All rights reserved.
                 LICENSE
               }
 
