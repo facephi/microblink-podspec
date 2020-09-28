@@ -26,11 +26,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/facephi/microblink-framework.git", :tag => "#{spec.version}" }
   spec.platform     = :ios
 
-  spec.ios.deployment_target = "8.0.0"
+  spec.ios.deployment_target = "9.0.0"
   spec.ios.resources = "Microblink.bundle"
   spec.ios.requires_arc = false
   spec.ios.vendored_frameworks = "Microblink.framework"
   spec.ios.frameworks = "Accelerate", "AVFoundation", "AudioToolbox", "AssetsLibrary", "CoreMedia"
   spec.ios.libraries = "c++", "iconv", "z"
+
+  spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
+  spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
 
 end
